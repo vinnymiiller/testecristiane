@@ -154,7 +154,6 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    height: 80vh;
     padding: 2em;
     text-align: center;
   }
@@ -345,15 +344,15 @@ header {
   }
   .contatos {
     background-color:#f17021;
-    height: 20vh;
+    height: 170px;
     text-align: center;
     padding: 1em;
   }
 
   .contatos h2 {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     color: #1a2948;
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   .contatos h3 {
