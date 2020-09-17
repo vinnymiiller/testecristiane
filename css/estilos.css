@@ -280,14 +280,14 @@ header {
  /* se a tela tiver pelo menos 400px*/
  @media (min-width: 400px) {
   .fotos {
-    height: 95vh;
+    height: 800px;
   }
 }
 
 /* se a tela tiver pelo menos 600px*/
 @media (min-width: 600px) {
   .fotos {
-    height: 75vh;
+    height: 650px;
   }
   .foto {
     grid-template-columns: 300px 300px;
@@ -297,7 +297,7 @@ header {
 /* se a tela tiver pelo menos 1000px*/
 @media (min-width: 1000px) {
   .fotos {
-  height: 55vh;
+  height: 450px;
   }
   .foto {
     grid-template-columns: 300px 300px 300px;
