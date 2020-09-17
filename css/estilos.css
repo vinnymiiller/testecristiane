@@ -1,0 +1,378 @@
+/* reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: White;
+    font-family: 'Roboto', sans-serif;
+    height: 90vh;
+    font-size: 10px;
+    background-color:#1a2948;
+  }
+
+/* se a tela tiver pelo menos 400px*/
+@media (min-width: 400px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+/* se a tela tiver pelo menos 600px*/
+@media (min-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* se a tela tiver pelo menos 1000px*/
+@media (min-width: 1000px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .menu {
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 10px 20px;
+  }
+
+  a {
+    color: #f17021;
+    text-decoration: none;
+  }
+  
+  .menu a:active,
+  .menu a:hover {
+    text-decoration: underline;
+  }
+  
+  .site-title,
+  .site-subtitle {
+    text-align: center;
+    color: white;
+  }
+  
+  .site-title {
+    font-size: 6em;
+    box-shadow: 10px 0 0 0 #f17021, -10px 0 0 0 #f17021;
+    background: #f17021;
+    display: inline;
+    padding: 3px 0 !important;
+  }
+
+  .site-subtitle {
+    font-style: italic;
+    font-size: 2em;
+    line-height: 1.8em;
+  }
+
+  .sobre {
+    background-color: white;
+    text-align: center;
+    padding: 2em;
+  }
+  .sobre h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: white;
+    box-shadow: 10px 0 0 0 #1a2948, -10px 0 0 0 #1a2948;
+    background: #1a2948;
+    display: inline-block;
+  }
+  .sobre h3 {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 2em;
+  }
+  .sobre p {
+    margin-bottom: 1em;
+    text-align: justify;
+    color: #1a2948;
+    
+  }
+  .sobre h4 {
+    font-size: 1.5em;
+    color: white;
+    box-shadow: 10px 0 0 0 #1a2948, -10px 0 0 0 #1a2948;
+    background: #1a2948;
+    display: inline-block;
+    font-style: italic;
+  }
+
+  .sobre .imgsobre {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+  }
+
+  .imgsobre,
+  .fts {
+      height: 180px;
+      width: 180px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px;
+  }
+
+  .fts {
+    transition: transform 500ms;
+  }
+
+  .fts:hover {
+    transform: scale(2);
+  }
+
+  .compromissos {
+    background-color:#f17021;
+    background-image: url("../img/bg_compromissos.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 80vh;
+    padding: 2em;
+    text-align: center;
+  }
+
+  .compromissos h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: white;
+  }
+
+  .compromissos h4 {
+    font-size: 2.5em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .comprom {
+    display: grid;
+    gap: 1em;
+    justify-content: space-evenly;
+    grid-gap: 25px;
+  }
+
+  .compr {
+    height: 95px;
+    width: 198px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 500ms;
+    border-radius: 10px;
+    padding: 2px;
+  }
+
+  
+ /* se a tela tiver pelo menos 400px*/
+ @media (min-width: 400px) {
+  .compromissos {
+    height: 1175px;
+  }
+    .comprom {
+    grid-template-columns: 250px;
+  }
+  .compr:hover {
+    transform: scale(1.5);
+    background-image: url("../img/fdblk.png");
+  }
+  .princp h3{
+    grid-template-columns: 100px 100px;
+  }
+  
+  .princp {
+    grid-template-columns: 230px;
+  }
+}
+
+/* se a tela tiver pelo menos 600px*/
+@media (min-width: 600px) {
+  .compromissos {
+    height: 700px;
+  }
+  .comprom {
+    grid-template-columns: 250px 250px;
+  }
+  .compr:hover {
+    transform: scale(1.5);
+  }
+  .princp h3 {
+    grid-template-columns: 100px 100px 100px;
+  }
+  .princp {
+    grid-template-columns: 230px 230px;
+  }
+}
+
+/* se a tela tiver pelo menos 1000px*/
+@media (min-width: 1000px) {
+  .compromissos {
+    height: 580px;
+  }
+  .comprom {
+    grid-template-columns: 300px 300px 300px;
+  }
+  .compr {
+    height: 142.5px;
+    width: 297.5px;
+  } 
+  .compr:hover {
+    transform: scale(1.2);
+    
+  }
+  .princp {
+    grid-template-columns: 230px 230px 230px 230px;
+  }
+}
+
+  .princp {
+    display: grid;
+    gap: 1em;
+    justify-content: center;
+  }
+
+  .princ {
+    height: 22.5px;
+    width: 221px;
+    object-fit: scale-down; 
+    object-position: top;
+    transition: transform 500ms;
+    border-radius: 10px;
+    padding: 2px;
+  }
+  .foto {
+    display: grid;
+    gap: 1em;
+    justify-content: center;
+  }
+  .fotos {
+    text-align: center;
+    padding: 2em;
+    background: #1a2948;
+  }
+
+ /* se a tela tiver pelo menos 400px*/
+ @media (min-width: 400px) {
+  .fotos {
+    height: 95vh;
+  }
+}
+
+/* se a tela tiver pelo menos 600px*/
+@media (min-width: 600px) {
+  .fotos {
+    height: 75vh;
+  }
+  .foto {
+    grid-template-columns: 300px 300px;
+  }
+}
+
+/* se a tela tiver pelo menos 1000px*/
+@media (min-width: 1000px) {
+  .fotos {
+  height: 55vh;
+  }
+  .foto {
+    grid-template-columns: 300px 300px 300px;
+  }
+}
+
+  .fotos h2 {
+    margin-bottom: 1em;
+    color: white;
+    font-size: 2.5em;
+  }
+
+  .fotos h3 {
+    margin-bottom: 1em;
+    color: white;
+  }
+
+  .videos {
+    background: white;
+    text-align: center;
+    padding: 2em;
+  }
+  
+  .videos h2 {
+    color: white;
+    font-size: 2.5em;
+    box-shadow: 10px 0 0 0 #f17021, -10px 0 0 0 #f17021;
+    background: #f17021;
+    display: inline;
+    padding: 3px 0 !important;
+    border: 10px;
+  }
+  
+  .videos h3 {
+    margin-bottom: 1em;
+  }
+  
+  .thumbvid {
+      height: 180px;
+      width: 180px;
+      margin-top: 1em;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px;
+  }
+  .contatos {
+    background-color:#f17021;
+    height: 20vh;
+    text-align: center;
+    padding: 1em;
+  }
+
+  .contatos h2 {
+    margin-bottom: 1em;
+    color: #1a2948;
+    font-size: 2em;
+  }
+
+  .contatos h3 {
+    margin-bottom: 1em;
+  }
+
+  .contato {
+    background-color: #f17021;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .contatos a {
+    color: #1a2948;
+    font-size: 3em;
+    transition: 1s;
+  }
+
+  .contatos a:active,
+  .contatos a:hover {
+    text-shadow: 0px 0px 5px white;
+  }
