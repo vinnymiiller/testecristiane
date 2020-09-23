@@ -8,39 +8,81 @@
 body {
     background: White;
     font-family: 'Roboto', sans-serif;
-    height: 90vh;
+    height: 100vh;
     font-size: 10px;
     background-color:#1a2948;
+    background-image: url("../img/Teste2.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+    background-position: top;
+    
   }
 
 /* se a tela tiver pelo menos 300px*/
 @media (min-width: 300px) {
   body {
     font-size: 10px;
+    background-image: url("../img/Teste4.png");
   }
+  header {
+    height: 35vh;
+}
+}
+/* se a tela tiver pelo menos 450px*/
+@media (min-width: 450px) {
+  body {
+    font-size: 10px;
+    background-image: url("../img/Teste3.png");
+  }
+  header {
+    height: 42vh;
+}
 }
 
 /* se a tela tiver pelo menos 600px*/
 @media (min-width: 600px) {
   body {
     font-size: 14px;
+    background-image: url("../img/Teste1.png");
   }
+  header {
+    height: 47vh;
+}
+}
+
+/* se a tela tiver pelo menos 750px*/
+@media (min-width: 750px) {
+  body {
+    font-size: 14px;
+    background-image: url("../img/Teste1.png");
+  }
+  header {
+    height: 60vh;
+}
 }
 
 /* se a tela tiver pelo menos 1000px*/
 @media (min-width: 1000px) {
   body {
     font-size: 16px;
+    background-image: url("../img/Teste1.png");
   }
+  header {
+    height: 80vh;
+}
+}
+/* se a tela tiver pelo menos 1500px*/
+@media (min-width: 1500px) {
+  body {
+    font-size: 16px;
+    background-image: url("../img/Teste1.png");
+  }
+  header {
+    height: 100vh;
+}
 }
 
-header {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-  
   .menu {
     background-color: white;
     position: fixed;
